@@ -1,0 +1,121 @@
+.bg1{
+    background-image: url("https://wallpapershome.com/images/pages/pic_h/12115.jpg");
+
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg2{
+    background-image: url("https://cdn.hipwallpaper.com/i/91/96/jA62m5.jpg");
+
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: "Comic Sans";
+    font-size: 20px;
+  }
+  
+  
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  .button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left:510px;
+    
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:white; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+.img-home{
+    border-radius:100%;
+    margin-left:500px;
+    margin-top:75px;
+}
+.dishes{
+    color: #FFFFFF;
+    border-color:white;
+    border-width: 1px;
+    border-style: solid;
+    text-align:center;
+    margin-left:300px;
+    margin-right:300px;
+}
+.img-dish{
+    height:135px;
+    width:135px;
+}
+h4{
+    border-color:rgba(212, 138, 40, 0.849);
+    margin-left:200px;
+    margin-right:200px;
+    background-color: #111;
+}

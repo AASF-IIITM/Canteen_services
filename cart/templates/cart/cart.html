@@ -1,0 +1,12 @@
+
+{% for final in finals %}
+{% if final.quantity %}
+
+    <div>
+        <p>{{ final.quantity }}</p>
+        <h4>{{ final.dish_name }}</h4>
+        <p>{{ final.price|linebreaksbr }}</p>
+        <p>{{ final.estimated_time|linebreaksbr }}</p>
+    </div>
+{% endif %}
+{% endfor %}

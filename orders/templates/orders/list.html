@@ -1,0 +1,40 @@
+{% extends 'orders/base.html' %}
+
+{% block content %}
+<div class="bg2">
+{% if user.is_authenticated %}
+{% for dish in dishes %}
+    <div class="dishes">
+        <img class="img-dish" src="{{dish.dish_logo}}">
+        <p>{{ dish.cuisines }}</p>
+        <h4 style="border-style:double">{{ dish.dish_name }}</h4>
+        <p>{{ dish.price|linebreaksbr }}</p>
+        <p>{{ dish.estimated_time|linebreaksbr }}</p>
+        
+        <!-- <form method="POST" class="post-form">{% csrf_token %}
+                <div class="form-group">
+                        <input type="number" min="1" max="10">
+                </div>
+                <button type="submit" class="save btn btn-default">Add to Cart</button>
+            </form> -->
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}<br>
+                <input type="text" name="id" value="{{ dish.id }}" hidden>
+                <input type="submit" class="btn btn-primary" value="Submit order">
+            </form>    
+    </div>
+    {% endfor %}
+{% else %}
+{% for dish in dishes %}
+    <div class="dishes">
+        <img class="img-dish" src="{{dish.dish_logo}}">
+        <p>{{ dish.cuisines }}</p>
+        <h4 style="border-style:double">{{ dish.dish_name }}</h4>
+        <p>{{ dish.price|linebreaksbr }}</p>
+        <p>{{ dish.estimated_time|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+{% endif %}
+</div>
+{% endblock %}

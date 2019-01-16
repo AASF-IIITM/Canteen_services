@@ -1,0 +1,68 @@
+
+<!-- <head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body> -->
+
+<nav class="navbar navbar-inverse" style="margin: 0px; border-radius: 0;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://127.0.0.1:8000/list/">Canteen</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="http://127.0.0.1:8000">Home</a></li>
+    </ul>
+    {% if user.is_authenticated %}
+    <ul class="nav navbar-nav navbar-right">
+    <form class="logout-link" action="/accounts/logout/" method="post">
+      {% csrf_token %}
+     <button type="submit" class="out-btn" style="float:right; color:rgb(255, 247, 247); background-color:rgb(46, 42, 42); margin-right:10px; width:100px;  "><span class="glyphicon glyphicon-user"></span>Logout</button> 
+    </form>
+    </ul>
+    {% else %}
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://127.0.0.1:8000/accounts/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="http://127.0.0.1:8000/accounts/login"> <span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> 
+    {% endif %}  
+  </div>
+</nav>
+
+</body>
+<!-- <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" style="font-size:19px; margin: 0px;">
+    <a class="navbar-brand" href="http://127.0.0.1:8000/list/" style="font-size:25px;">Canteen</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/">Home</a>
+      </li>
+      {% if user.is_authenticated %}
+      <ul class="nav navbar-nav navbar-right">
+      <form class="logout-link" action="/accounts/logout/" method="post">
+        {% csrf_token %}
+       <button type="submit" class="out-btn" style="float:right;"><a href="http://127.0.0.1:8000"><span class="glyphicon glyphicon-user"></span>Logout</a></button> 
+      </form>
+      </ul>
+      {% else %}
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://127.0.0.1:8000/accounts/signup" style="float:right;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="http://127.0.0.1:8000/accounts/login" style="float:right;"> <span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul> 
+      {% endif %}    
+    </ul>
+  </nav>
+  </body> -->

@@ -1,0 +1,13 @@
+{% extends 'shop/base.html' %}
+{% block content %}
+    <div class="container-fluid bg4">
+        <div class="Login-form">
+        <h1 class="Login-head"> Log in </h1>
+    <form class="site-form" action="/accounts/login/" method="post">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" value="login">
+    </form>
+    </div>
+    </div>
+{% endblock%}

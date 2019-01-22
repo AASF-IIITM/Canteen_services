@@ -1,0 +1,81 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}
+    {% if category %}{{ category.name }} {% else %} Products {% endif %}
+{% endblock %}
+
+{% block content %}
+    <div class="bg2">
+        {% if user.is_authenticated %}
+        <div class="col-md-4 container-fluid">
+            <div class="row cart-btn-list">
+                <button class="btn btn-info pull-right">
+                {% with totail_items=cart|length %}
+                {% if cart|length > 0 %}
+                    My Shopping Order:
+                    <a href="{% url "cart:cart_detail" %}">
+                        {{ totail_items }} item {{ totail_items|pluralize }},Rs. {{ cart.get_total_price }}
+                    </a>
+                    {% else %}
+                    Your cart is empty.
+                {% endif %}
+                {% endwith %}
+                </button>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-md-4 container-fluid">
+            <h1 class="list-head">Dishes</h1>
+        </div>    
+        {% endif %}
+        <br><br><br><br><br>
+        <div class="container-fluid">
+            <div class="row">
+                
+
+                <div class="col-sm-8 blog-main">
+
+                <div class="blog-post">
+                    <div class="row">
+                        {% for product in products %}
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <a href="{{ product.get_absolute_url }}">
+                                        <img src="{{product.image}}" alt="..." class="dishes-img">
+                                    </a>
+                                    <div class="caption">
+                                        <h3 class="text-center">
+                                            <a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
+                                        </h3>
+                                        <p class="text-center">Rs. {{ product.price }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    
+
+                </div>
+
+                </div>
+
+                <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                <div class="sidebar-module">
+                    <h4>Categories</h4>
+                    <ol class="list-unstyled">
+                    <li {% if not category %} class="active"{% endif %}><a href="{% url 'shop:product_list' %}">All</a></li>
+                    {% for c in categories %}
+
+                    <li {% if category.slug == c.slug %} class="active"{% endif %}>
+                        <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                    </li>
+                    {% endfor %}
+                    </ol>
+                </div>
+                </div>
+
+            </div>
+
+            </div>
+    </div>        
+{% endblock %}

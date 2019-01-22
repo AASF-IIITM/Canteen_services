@@ -1,0 +1,328 @@
+
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 34px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-bottom: 15%;
+    margin-left:39%;
+    margin-top:6%;
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  a button {
+    color: white;
+    text-decoration: none;
+}
+
+  a:hover button{
+     color:white;
+     text-decoration:none;
+     cursor:pointer;
+}
+.bg1{
+  background-image: url("https://wallpapershome.com/images/pages/pic_h/12115.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img-home{
+  margin-left:35%;
+  margin-top:6%;
+  width:400px;
+  height:200px;
+}
+/* detail page */
+.bg2{
+  background-image: url("https://brandless-2.imgix.net/variant_thumbnails/images/000/000/815/original/53011_Wooden_Spoon_2000x2000.jpg?ixlib=rb-1.1.0&w=1180&h=1180&q=85&auto=format%2Ccompress&s=345365befef3e193e094e9fc8075b8fe");
+
+  /* Full height */
+  /* height: 200%; */
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+  padding-top: 100px;
+}
+.list-head{
+  color:#ffffff;
+  font-size:60px;
+}
+.blog-post {
+  margin-bottom: 30%;
+} 
+.sidebar-module{
+  background-color: rgb(37, 36, 36);
+  /* padding-left:50px; */
+  color:white;
+  opacity: 0.95;
+  padding: 15px;
+  margin-right:10%;
+}
+.dishes-img{
+  height: 130px;
+  width: auto;
+}
+.thumbnail{
+  height:300px;
+}
+.caption{
+  color:rgb(0, 116, 248);
+}
+.cart-btn-list{
+  margin-top:15%
+}
+/* dish detail page */
+.bg3{
+  background-image: url("https://i.pinimg.com/originals/13/49/a3/1349a39071ec392f01c5624a47cd4f47.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.base-detail{
+  margin:8%;
+  background-color: #fff;
+  opacity:0.95;
+}
+.detail-img{
+  height: 170px;
+  width:auto;
+}
+.detail-submit{
+  font-size: 17px;
+  width:100px;
+}
+/* login page */
+.bg4{
+  background-image: url("https://d37219swed47g7.cloudfront.net/media/images/guides/best-outdoor-restaurants-nyc/Malatesta%20Outside.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.Login-form{
+    margin-bottom:50%;
+    background-color:white; 
+    opacity:0.91; 
+    margin-top:8%; 
+    margin-right: 15%; 
+    margin-left: 10%; 
+    padding-top:3%;
+}
+.Login-head{
+    padding-left:100px; 
+}
+
+.bg5{
+  background-image: url("http://www.chiangmailocator.com/design/photosbiz1/chiang-mai-outside-in-cafe--14906.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.signup-div{
+    background-color: white;
+    opacity:0.85;
+    margin-right:10%;
+    color:black;
+  }
+.signup-div:hover{
+    background-color: white;
+    opacity:0.9;
+  }
+.signup-head{
+    
+    margin-left:100px; 
+    padding-top:50px; 
+}  
+.bg6{
+  background-image: url("http://newsmobile.in/wp-content/uploads/2016/12/mandalay-bay-retail-shoppes-at-mandalay-place-girl-shopping.tif.image_.1440.550.high_.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.cart-view{
+    background-color: #fff;
+    opacity: 0.95;
+    margin-bottom:100%;
+    margin-top: 6%;
+    margin-left: 6%; 
+    margin-right: 6%;
+  }
+.cart-view:hover{
+    background-color: #fff;
+    opacity: 1;
+  }
+.small-price-info{
+    color: #ffffff;
+}
+.table{
+    /* padding:5px; */
+    margin-right: 15px;
+  }
+thead{
+    background-color: #5AC8FA;
+}
+.img-td{
+    height: 100px; 
+    width: 200px;
+}
+tr{
+    background-color: #5AC8FA;
+}  
+/*Checkout Page*/
+.b7{
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/0e/69/76/c2/sanno-cafeteria.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.checkout{
+  background-color: #fff;
+  opacity: 0.95;
+  margin-bottom:400px;
+  padding: 10px;
+  margin-top: 6%;
+}
+.checks.site-form{
+ display: block;
+}
+
+.b8{
+  background-image: url("http://cafeteria15l.com/wp-content/uploads/2015/03/slider01.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top:100px;
+  padding-bottom:0px;
+}
+.thanks{
+    background-color: #fff;
+    opacity: 0.9;
+    margin-bottom:100%;
+    padding-left:5%;
+    margin-left:15%;
+    margin-right:15%;
+    margin-top: 6%
+  }
+  
+
+
+.out-btn{
+  height: 50px;
+  background-color: white;
+}
+
+.site-form{
+ align-items: center;
+ margin-top:50px;
+ /* margin-bottom:450px; */
+ padding-left:100px;
+ padding-bottom:100px;
+ display: block;
+}
+.site-form input, .site-form textarea{
+  display: block;
+}
+.helptext, .helptext ul{
+  margin: 0 auto 20px;
+  color:rgb(173, 158, 158);
+  display: block;
+  font-size: 0.9em;
+}
+input[type=text]{
+color:black;
+border-radius: 2px;
+width:250px;
+height: 30px;
+}
+input[type=submit]{
+  border-radius: 2px;
+  margin-top:10px;
+  font-size:18px;
+ /* width: 100px; */
+ height:35px;
+}
+input[type=password]{
+  color:black;
+  border-radius: 2px;
+  width:250px;
+  height: 30px;
+}
+
+label{
+  font-size:20px;
+}
+
+
+
+
